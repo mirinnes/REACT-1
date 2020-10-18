@@ -1,0 +1,75 @@
+.title-and-sub {
+    text-align: center;
+    .title {
+        padding-top: 15px;
+        color: #292929;
+        font-size: 25px;
+    }
+    .sub {
+       color: rgb(117, 117, 117);
+    }
+}
+
+
+.form {
+    .form-submit {
+        input {
+            border: none;
+            height: 18px;
+            background-color: rgb(240, 240, 240);
+            width: 230px;
+            padding: 6px;
+            border-radius: 5px 0 0 5px;
+            &:focus{
+                outline: rgb(240, 240, 240);
+            }
+        }
+        .button-submit {
+            width: 60px;
+            height: 30px;
+            background-color: #FF6969;
+            color: white;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            &:active {
+                outline: #c94c4c;
+                background-color: #db5353;
+                box-shadow: 2px inset #333;
+            }
+            &:focus {
+                outline:  #c94c4c;
+            }
+        }
+    }
+}
+
+.content-todos {
+    .todo-info {
+        display: flex;
+        align-items: center;
+        p {
+            margin-right: 10px;
+        }
+        .btn-edit {
+            margin-right: 5px;
+            width: 30px;
+            height: 25px;
+            background-color: white;
+            color: rgb(145, 145, 145);
+            border: 1px solid rgb(22, 201, 171);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-delete {
+            margin-right: 5px;
+            width: 30px;
+            height: 25px;
+            background-color: white;
+            color: rgb(145, 145, 145);
+            border: 1px solid rgb(201, 22, 46);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+}
