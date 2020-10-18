@@ -9,13 +9,11 @@ import Form from '../Form/Form';
 
     const [todos, dispatch] = useReducer(todosReducer, []) // le paso el nombre de la funcion que va a modificar 
     // 'todos', luego le paso el valor inicial de todos(en este caso un array vacio)
-    const [name, setName] = useState('');
+    const [task, setTask] = useState('');
   
     
-    console.log(todos)
-
     return(
-        <TodoContext.Provider value={ {name, setName, todos, dispatch}}>
+        <TodoContext.Provider value={ {task, setTask, todos, dispatch}}>
             <ContentContainer>
                 <Form />
             </ContentContainer>
