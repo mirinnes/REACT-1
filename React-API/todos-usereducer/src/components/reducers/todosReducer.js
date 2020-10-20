@@ -5,7 +5,10 @@ export const TODO_EDIT = 'TODO_EDIT';
 export default (state, action) => {
     switch(action.type) {
         case TODO_ADD:
+            console.log("Estoy trabajdno en el ADD")
+            
             return [...state, action.payload];
+
         case TODO_EDIT:
             state.map(todo => {
                 if(todo.id == action.payload.editedId) todo.task = action.payload.newTask;
